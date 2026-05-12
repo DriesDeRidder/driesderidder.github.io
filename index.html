@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dries De Ridder — VR Game Developer</title>
+<meta name="description" content="Belgian VR game developer. Lead on Blackwood and Cargo at VR Base. Co-creator of Spectr, an in-house VR framework.">
+<meta property="og:title" content="Dries De Ridder — VR Game Developer">
+<meta property="og:description" content="Belgian VR game developer. Lead on Blackwood and Cargo at VR Base.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700;9..144,900&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="top">
+  <a href="index.html" class="logo">DDR<span>.</span></a>
+  <div class="nav-links">
+    <a href="#work">work</a>
+    <a href="#about">about</a>
+    <a href="#writing">writing</a>
+    <a href="#contact">contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-meta">
+    <div><span class="dot"></span>available for freelance</div>
+    <div>ghent, belgium · cet</div>
+  </div>
+
+  <div class="hero-left">
+    <div class="hero-tag">Portfolio · 2026</div>
+    <h1>
+      I build <em>virtual</em><br>
+      worlds people<br>
+      actually <span class="underline">step into</span>.
+    </h1>
+    <p class="hero-bio">
+      I'm <strong>Dries De Ridder</strong> — a Belgian game developer specialising in VR. Lead developer on <strong>Blackwood</strong> and <strong>Cargo</strong> at VR Base, and co-creator of <strong>Spectr</strong>, an in-house framework now powering most of the studio's VR work.
+    </p>
+    <div class="cta-group">
+      <a href="#work" class="btn btn-primary">See the work →</a>
+      <a href="resume.pdf" class="btn btn-ghost">Download CV</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="portrait-frame">
+      <div class="portrait-corner tl"></div>
+      <div class="portrait-corner tr"></div>
+      <div class="portrait-corner bl"></div>
+      <div class="portrait-corner br"></div>
+      <!-- Replace src below with /images/portrait.jpg when you have a photo ready -->
+      <img class="portrait-img" src="images/portrait.jpg" alt="Dries De Ridder" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="portrait-placeholder">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1">
+          <circle cx="50" cy="38" r="16"/>
+          <path d="M20 90 C20 70, 35 60, 50 60 C65 60, 80 70, 80 90"/>
+        </svg>
+        add images/portrait.jpg
+      </div>
+      <div class="portrait-tag">DRIES · <span>VR DEV</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stat">
+    <div class="stat-num"><em>6+</em></div>
+    <div class="stat-label">years building VR</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">5</div>
+    <div class="stat-label">shipped titles</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">9</div>
+    <div class="stat-label">dev team @ VR Base</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num"><em>∞</em></div>
+    <div class="stat-label">cups of coffee</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="work">
+  <div class="section-header">
+    <h2 class="section-title">Selected <em>work</em></h2>
+    <div class="section-index">01 / Work</div>
+  </div>
+
+  <div class="projects-grid">
+    <a href="projects.html#blackwood" class="project featured">
+      <div class="project-img blackwood">
+        <div class="project-img-placeholder">[ Blackwood — hero screenshot ]</div>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span>VR Base · 2022</span>
+          <span>Lead Developer</span>
+          <span>Co-op VR Shooter</span>
+        </div>
+        <h3 class="project-name">Blackwood</h3>
+        <p class="project-desc">Free-roam co-op VR medieval shooter. You wear the armor of a knight defending your village from the evil that has fallen upon the land. I led the timeline, AI systems, leaderboards, and core narrative implementation.</p>
+        <div class="project-tags">
+          <span class="tag">Unity</span>
+          <span class="tag">C#</span>
+          <span class="tag">Multiplayer</span>
+          <span class="tag">AI Systems</span>
+          <span class="tag">LBE VR</span>
+        </div>
+        <div class="project-cta">Read case study <span class="arrow">→</span></div>
+      </div>
+    </a>
+
+    <a href="projects.html#spectr" class="project">
+      <div class="project-img spectr">
+        <div class="project-img-placeholder">[ Spectr — framework visual ]</div>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span>VR Base · 2020 →</span>
+          <span>Co-creator</span>
+        </div>
+        <h3 class="project-name">Spectr</h3>
+        <p class="project-desc">In-house modular VR framework. Started with a team of 3, now used by 9+ devs across the studio for nearly every VR project.</p>
+        <div class="project-tags">
+          <span class="tag">Architecture</span>
+          <span class="tag">Tooling</span>
+          <span class="tag">Multiplayer</span>
+        </div>
+        <div class="project-cta">Read more <span class="arrow">→</span></div>
+      </div>
+    </a>
+
+    <a href="projects.html#cargo" class="project">
+      <div class="project-img cargo">
+        <div class="project-img-placeholder">[ Cargo — gameplay screenshot ]</div>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span>VR Base · 2019</span>
+          <span>Lead Developer</span>
+        </div>
+        <h3 class="project-name">Cargo</h3>
+        <p class="project-desc">27×13m free-roam team deathmatch — VR Base's first arena where opposing teams could move freely between each other. Level design, gameplay loop, multiplayer networking.</p>
+        <div class="project-tags">
+          <span class="tag">Unity</span>
+          <span class="tag">Level Design</span>
+          <span class="tag">Networking</span>
+        </div>
+        <div class="project-cta">Read more <span class="arrow">→</span></div>
+      </div>
+    </a>
+
+    <a href="projects.html#scandinavian" class="project">
+      <div class="project-img camp">
+        <div class="project-img-placeholder">[ Camping sim — gameplay shot ]</div>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span>Personal · 2023 →</span>
+          <span>Solo project</span>
+        </div>
+        <h3 class="project-name">Scandinavian Camping Simulator</h3>
+        <p class="project-desc">A solo passion project — and my first non-VR game. Run a camping in the Nordics: accommodation, activities, nature. Still in active development.</p>
+        <div class="project-tags">
+          <span class="tag">Solo Dev</span>
+          <span class="tag">Sim</span>
+          <span class="tag">Unity</span>
+        </div>
+        <div class="project-cta">Read devlog <span class="arrow">→</span></div>
+      </div>
+    </a>
+
+    <a href="projects.html#edrivr" class="project">
+      <div class="project-img edrivr">
+        <div class="project-img-placeholder">[ E-DRIVR — golf cart VR sim ]</div>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span>VR Base · 2022</span>
+          <span>Unity Lead</span>
+        </div>
+        <h3 class="project-name">E-DRIVR</h3>
+        <p class="project-desc">VR truck simulator built on a real golf cart for a Belgian trucking company. Trailer physics without a physics-based approach, external tracking, motion sickness mitigation.</p>
+        <div class="project-tags">
+          <span class="tag">VR</span>
+          <span class="tag">Physics</span>
+          <span class="tag">Hardware</span>
+        </div>
+        <div class="project-cta">Read more <span class="arrow">→</span></div>
+      </div>
+    </a>
+
+    <a href="projects.html#tools" class="project">
+      <div class="project-img tools">
+        <div class="project-img-placeholder">[ Editor tools — Unity inspector ]</div>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span>Various</span>
+          <span>Tools</span>
+        </div>
+        <h3 class="project-name">Editor Tools</h3>
+        <p class="project-desc">Unity editor tools for BIM workflows, area-light placement, dissection shaders, and object filtering. Some open-source on GitHub.</p>
+        <div class="project-tags">
+          <span class="tag">Unity</span>
+          <span class="tag">Shaders</span>
+          <span class="tag">VFX Graph</span>
+        </div>
+        <div class="project-cta">See on GitHub <span class="arrow">→</span></div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-header">
+    <h2 class="section-title"><em>About</em></h2>
+    <div class="section-index">02 / About</div>
+  </div>
+
+  <div class="about">
+    <div class="about-text">
+      <p>I've spent the last six years deep in <em>VR development</em> — shipping titles, building the framework most of my studio runs on, and figuring out the awkward edges where physical hardware meets virtual presence.</p>
+      <p>Outside of work I write about game dev on Medium, maintain a handful of Unity tools on GitHub, and slowly build a non-VR camping sim because sometimes you just want to look at trees.</p>
+    </div>
+    <div class="about-side">
+      <h4>Stack</h4>
+      <ul>
+        <li><span>Engine</span><span>Unity</span></li>
+        <li><span>Language</span><span>C#</span></li>
+        <li><span>Tools</span><span>Shader / VFX Graph</span></li>
+        <li><span>Networking</span><span>Photon, Mirror</span></li>
+        <li><span>Hardware</span><span>Quest, Vive, custom</span></li>
+      </ul>
+      <h4>Currently</h4>
+      <ul>
+        <li><span>@ VR Base</span><span>Ghent, BE</span></li>
+        <li><span>Side</span><span>Camping Sim</span></li>
+        <li><span>Writing</span><span>Medium</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLES -->
+<section class="section" id="writing">
+  <div class="section-header">
+    <h2 class="section-title">Writing &amp; <em>guides</em></h2>
+    <div class="section-index">03 / Writing</div>
+  </div>
+
+  <div class="articles-list">
+    <a href="https://medium.com/" class="article" target="_blank" rel="noopener">
+      <div class="article-num">→ 01</div>
+      <div class="article-title">Coding a simple car trailer in C# and Unity</div>
+      <div class="article-meta">Medium · 6 min read</div>
+      <div class="article-arrow">↗</div>
+    </a>
+    <a href="https://medium.com/" class="article" target="_blank" rel="noopener">
+      <div class="article-num">→ 02</div>
+      <div class="article-title">Converting custom shaders so they'll accept light cookies</div>
+      <div class="article-meta">Medium · 8 min read</div>
+      <div class="article-arrow">↗</div>
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-eyebrow">— Let's build something —</div>
+  <h2 class="contact-headline">Got a <em>VR idea</em>?<br>Let's talk.</h2>
+  <a href="mailto:hello@driesderidder.dev" class="contact-email">hello@driesderidder.dev</a>
+</section>
+
+<footer>
+  <div>© 2026 Dries De Ridder · Built with care in Ghent</div>
+  <div class="footer-socials">
+    <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+    <a href="https://medium.com/" target="_blank" rel="noopener">Medium ↗</a>
+  </div>
+</footer>
+
+</body>
+</html>
