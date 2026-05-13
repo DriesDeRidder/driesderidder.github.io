@@ -275,6 +275,21 @@ nav.top {
   height: 80px;
   opacity: 0.3;
 }
+.portrait-fallback {
+  display: none;
+  position: absolute;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--display);
+  font-size: 96px;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--ink-dim);
+  background: var(--bg-elev);
+  z-index: 2;
+}
+.portrait-fallback span { color: var(--accent); }
 .portrait-corner {
   position: absolute;
   width: 24px;
