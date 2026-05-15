@@ -65,7 +65,7 @@
     <p class="case-lede">What started as an architectural BIM viewer in VR has grown into the modular framework behind nearly everything VR Base ships — industrial simulations for major clients, in-house games, and the BIM collaboration tool that kicked the whole thing off.</p>
 
     <h3 class="case-h3">Where it started</h3>
-    <p>Spectr began as <strong>Spectr BIM</strong> — a way for architectural clients to upload their BIM models to our platform and step inside them in VR or through a web stream. The experience is multiplayer: you and your collaborators walk through the model together, change materials, hide or highlight structural elements like walls and pipes, take measurements, and record sessions for later review.</p>
+    <p>Spectr began as <strong>Spectr BIM</strong> — a way for architectural clients to upload their BIM models to our platform and step inside them in VR or through a web stream. The experience is multiplayer: you and your collaborators walk through the model together, change materials, switch between day and night lighting cycles, hide or highlight structural elements like walls and pipes, take measurements, and record sessions for later review.</p>
 
     <h3 class="case-h3">Where it is today</h3>
     <p>That BIM-viewer core grew into something much broader. Today, Spectr is the framework behind a wide catalogue of work — industrial simulations and interactive collaboration tools for clients including Kellanova, Mars, DEME, Lantis, and SPIE. Every client project shares the same Spectr foundation but layers custom code on top, so we ship bespoke experiences without rebuilding the common systems each time. The same framework also powers in-house VR Base games like Temple of Puchino and Nautilus.</p>
@@ -85,8 +85,16 @@
   </div>
   </div>
   <div class="case-gallery single">
-    <figure><img src="images/spectr-1.jpg" alt="Spectr — same room shown with two different floor materials, demonstrating Spectr's live material-change feature" loading="lazy" onerror="this.style.display='none'"></figure>
-    <figure><img src="images/spectr-2.png" alt="Spectr — interior scene captured inside the framework" loading="lazy" onerror="this.style.display='none'"></figure>
+    <figure class="compare-slider" data-compare>
+      <img class="compare-img compare-base" src="images/spectr-1-dark.jpg" alt="Spectr — same room shown with a dark walnut floor; drag the handle to swap to a lighter wood, demonstrating Spectr's live material-change feature">
+      <div class="compare-overlay"><img class="compare-img" src="images/spectr-1-light.jpg" alt=""></div>
+      <div class="compare-handle" aria-hidden="true"><span class="compare-knob"></span></div>
+    </figure>
+    <figure class="compare-slider" data-compare>
+      <img class="compare-img compare-base" src="images/spectr-2-render.jpg" alt="Spectr — finished building exterior; drag the handle to reveal the underlying structural and MEP systems, demonstrating Spectr's hide/highlight feature">
+      <div class="compare-overlay"><img class="compare-img" src="images/spectr-2-structure.jpg" alt=""></div>
+      <div class="compare-handle" aria-hidden="true"><span class="compare-knob"></span></div>
+    </figure>
     <figure class="compare-slider" data-compare>
       <img class="compare-img compare-base" src="images/spectr-3-night.jpg" alt="Spectr — same industrial loft shown at night; drag the handle to reveal the daylight version">
       <div class="compare-overlay"><img class="compare-img" src="images/spectr-3-day.jpg" alt=""></div>

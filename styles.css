@@ -896,6 +896,8 @@ footer {
   display: block;
   width: 100%;
   height: auto;
+  pointer-events: none;
+  -webkit-user-drag: none;
 }
 .compare-slider .compare-overlay {
   position: absolute;
