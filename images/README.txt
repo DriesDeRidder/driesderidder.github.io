@@ -6,7 +6,6 @@ Suggested filenames (referenced by the site):
 - spectr.jpg
 - cargo.jpg
 - scandinavian.jpg
-- edrivr.jpg
 - tools.jpg
 
 Recommended size: 1600px wide for project shots, JPEG at quality 85.

@@ -435,7 +435,6 @@ nav.top {
 .project-img.spectr { background: linear-gradient(135deg, #0f2024 0%, #060d10 100%); }
 .project-img.cargo { background: url("images/cargo.jpg") center/cover no-repeat, linear-gradient(135deg, #1f1a14 0%, #0a0807 100%); }
 .project-img.camp { background: url("images/scandinavianCampingSite.png") center/cover no-repeat, linear-gradient(135deg, #14201a 0%, #060a08 100%); }
-.project-img.edrivr { background: url("images/golfCartTruck.jpg") center/cover no-repeat, linear-gradient(135deg, #1a1822 0%, #08070d 100%); }
 .project-img.tools { background: url("images/lightBakeTool.png") center/cover no-repeat, linear-gradient(135deg, #20201a 0%, #0a0a07 100%); }
 
 .project-body { padding: 28px; }
@@ -744,7 +743,6 @@ footer {
 .case-hero.spectr { background: linear-gradient(135deg, #0f2024 0%, #060d10 100%); }
 .case-hero.cargo { background: url("images/cargo.jpg") center/cover no-repeat, linear-gradient(135deg, #1f1a14 0%, #0a0807 100%); }
 .case-hero.camp { background: url("images/scandinavianCampingSite.png") center/cover no-repeat, linear-gradient(135deg, #14201a 0%, #060a08 100%); }
-.case-hero.edrivr { background: url("images/golfCartTruck.jpg") center/cover no-repeat, linear-gradient(135deg, #1a1822 0%, #08070d 100%); }
 .case-hero.tools { background: url("images/lightBakeTool.png") center/cover no-repeat, linear-gradient(135deg, #20201a 0%, #0a0a07 100%); }
 .case-hero-placeholder {
   position: absolute;
