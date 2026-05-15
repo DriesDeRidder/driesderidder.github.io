@@ -37,17 +37,63 @@
 <section class="page-header">
   <a href="index.html" class="back-link">← Back to home</a>
   <h1 class="page-title">Selected <em>work</em></h1>
-  <p class="page-sub">Six projects from the last few years — shipped VR games, an in-house framework that runs most of my studio's work, a personal simulation, and a handful of editor tools.</p>
+  <p class="page-sub">A few projects from the last few years — an in-house framework that runs most of my studio's work, shipped VR games, a personal simulation, performance work that runs through all of it, and a handful of editor tools.</p>
 </section>
 
 <!-- TABLE OF CONTENTS -->
 <nav class="toc">
-  <a href="#blackwood">Blackwood</a>
   <a href="#spectr">Spectr</a>
+  <a href="#blackwood">Blackwood</a>
   <a href="#cargo">Cargo</a>
   <a href="#scandinavian">Camping Sim</a>
-  <a href="#tools">Editor Tools</a>
+  <a href="#profiling">Profiling &amp; Optimization</a>
+  <a href="#tools">Tools &amp; Systems</a>
 </nav>
+
+<!-- SPECTR -->
+<article class="case" id="spectr">
+  <div class="case-main">
+  <div class="case-hero spectr"></div>
+  <div class="case-body">
+    <div class="case-meta">
+      <div><span class="k">Company</span><span class="v">VR Base</span></div>
+      <div><span class="k">Year</span><span class="v">2020 — present</span></div>
+      <div><span class="k">Role</span><span class="v">Co-creator</span></div>
+      <div><span class="k">Type</span><span class="v">Internal framework</span></div>
+    </div>
+    <h2 class="case-name">Spectr</h2>
+    <p class="case-lede">What started as an architectural BIM viewer in VR has grown into the modular framework behind nearly everything VR Base ships — industrial simulations for major clients, in-house games, and the BIM collaboration tool that kicked the whole thing off.</p>
+
+    <h3 class="case-h3">Where it started</h3>
+    <p>Spectr began as <strong>Spectr BIM</strong> — a way for architectural clients to upload their BIM models to our platform and step inside them in VR or through a web stream. The experience is multiplayer: you and your collaborators walk through the model together, change materials, hide or highlight structural elements like walls and pipes, take measurements, and record sessions for later review.</p>
+
+    <h3 class="case-h3">Where it is today</h3>
+    <p>That BIM-viewer core grew into something much broader. Today, Spectr is the framework behind a wide catalogue of work — industrial simulations and interactive collaboration tools for clients including Kellanova, Mars, DEME, Lantis, and SPIE. Every client project shares the same Spectr foundation but layers custom code on top, so we ship bespoke experiences without rebuilding the common systems each time. The same framework also powers in-house VR Base games like Temple of Puchino and Nautilus.</p>
+
+    <h3 class="case-h3">My contribution</h3>
+    <p>In 2020 we laid the foundation for what Spectr is today. We started with a team of three and have continued developing it as the studio has grown past nine developers. I laid the groundwork for the modular architecture, implemented the multiplayer framework, built tools that automate repetitive setup, and helped design the feature-selection system that lets each project opt into exactly what it needs — locomotion, interaction, hardware integrations, BIM tooling — without dragging the rest along. That modularity is what makes the per-client custom-code approach viable at the scale we now run it.</p>
+
+    <div class="case-tags">
+      <span class="tag">Architecture</span>
+      <span class="tag">Modularity</span>
+      <span class="tag">Multiplayer</span>
+      <span class="tag">BIM</span>
+      <span class="tag">Industry</span>
+      <span class="tag">Unity</span>
+      <span class="tag">C#</span>
+    </div>
+  </div>
+  </div>
+  <div class="case-gallery single">
+    <figure><img src="images/spectr-1.jpg" alt="Spectr — same room shown with two different floor materials, demonstrating Spectr's live material-change feature" loading="lazy" onerror="this.style.display='none'"></figure>
+    <figure><img src="images/spectr-2.png" alt="Spectr — interior scene captured inside the framework" loading="lazy" onerror="this.style.display='none'"></figure>
+    <figure class="compare-slider" data-compare>
+      <img class="compare-img compare-base" src="images/spectr-3-night.jpg" alt="Spectr — same industrial loft shown at night; drag the handle to reveal the daylight version">
+      <div class="compare-overlay"><img class="compare-img" src="images/spectr-3-day.jpg" alt=""></div>
+      <div class="compare-handle" aria-hidden="true"><span class="compare-knob"></span></div>
+    </figure>
+  </div>
+</article>
 
 <!-- BLACKWOOD -->
 <article class="case" id="blackwood">
@@ -84,46 +130,6 @@
     <figure><img src="images/blackwood-1.jpg" alt="Blackwood screenshot 1" loading="lazy" onerror="this.style.display='none'"></figure>
     <figure><img src="images/blackwood-2.jpg" alt="Blackwood screenshot 2" loading="lazy" onerror="this.style.display='none'"></figure>
     <figure><img src="images/blackwood-3.jpg" alt="Blackwood screenshot 3" loading="lazy" onerror="this.style.display='none'"></figure>
-  </div>
-</article>
-
-<!-- SPECTR -->
-<article class="case" id="spectr">
-  <div class="case-main">
-  <div class="case-hero spectr">
-    <div class="case-hero-placeholder">[ Spectr framework visual ]</div>
-  </div>
-  <div class="case-body">
-    <div class="case-meta">
-      <div><span class="k">Company</span><span class="v">VR Base</span></div>
-      <div><span class="k">Year</span><span class="v">2020 — present</span></div>
-      <div><span class="k">Role</span><span class="v">Co-creator</span></div>
-      <div><span class="k">Type</span><span class="v">Internal framework</span></div>
-    </div>
-    <h2 class="case-name">Spectr</h2>
-    <p class="case-lede">An in-house modular VR framework that now powers nearly every project at VR Base.</p>
-
-    <h3 class="case-h3">The project</h3>
-    <p>Spectr lets developers quickly prototype and build VR games or simulations on top of a stable, shared foundation. Its modular structure means each project can opt in only to the features it needs — multiplayer, locomotion, interaction systems, hardware integrations — without dragging the rest along.</p>
-
-    <h3 class="case-h3">My contribution</h3>
-    <p>In 2020 we laid the foundation for what Spectr is today. We started with a team of three and have continued developing it as the studio has grown to more than nine developers.</p>
-    <p>I laid the groundwork for the modular architecture itself, implemented the multiplayer framework, built tools that automate repetitive setup tasks, and helped design the feature-selection system that lets each project pick and choose.</p>
-    <p>Today, Spectr is the foundation for almost every in-house solution at VR Base, including The Hazard Factory and the studio's wider VR Base catalogue.</p>
-
-    <div class="case-tags">
-      <span class="tag">Architecture</span>
-      <span class="tag">Tooling</span>
-      <span class="tag">Multiplayer</span>
-      <span class="tag">Unity</span>
-      <span class="tag">C#</span>
-    </div>
-  </div>
-  </div>
-  <div class="case-gallery">
-    <figure><img src="images/spectr-1.jpg" alt="Spectr framework screenshot 1" loading="lazy" onerror="this.style.display='none'"></figure>
-    <figure><img src="images/spectr-2.jpg" alt="Spectr framework screenshot 2" loading="lazy" onerror="this.style.display='none'"></figure>
-    <figure><img src="images/spectr-3.jpg" alt="Spectr framework screenshot 3" loading="lazy" onerror="this.style.display='none'"></figure>
   </div>
 </article>
 
@@ -200,28 +206,70 @@
   </div>
 </article>
 
-<!-- EDITOR TOOLS -->
+<!-- PROFILING & OPTIMIZATION -->
+<article class="case" id="profiling">
+  <div class="case-main">
+  <div class="case-hero profiling">
+    <div class="case-hero-placeholder">[ Profiling &amp; Optimization ]</div>
+  </div>
+  <div class="case-body">
+    <div class="case-meta">
+      <div><span class="k">Discipline</span><span class="v">Performance</span></div>
+      <div><span class="k">Platform</span><span class="v">VR / Unity</span></div>
+      <div><span class="k">Applies to</span><span class="v">All my projects</span></div>
+    </div>
+    <h2 class="case-name">Profiling &amp; Optimization</h2>
+    <p class="case-lede">VR forgives nothing — a missed frame is a noticeable hitch. Years of shipping to standalone headsets has made performance work part of how I write code, not a phase tacked onto the end.</p>
+
+    <h3 class="case-h3">How I approach performance</h3>
+    <p>Performance work is measurement first. I lean on the Unity Profiler and Memory Profiler for CPU and GC, the Frame Debugger and RenderDoc for GPU and draw calls, and platform-specific tooling like OVR Metrics or Snapdragon Profiler when targeting standalone headsets. The goal is to know where time is actually going before I change anything — guessing burns days.</p>
+
+    <h3 class="case-h3">What I look for</h3>
+    <ul class="case-list">
+      <li><strong>GC pressure</strong> — boxing, allocations in update loops, LINQ on hot paths, string concatenation in logs that ship.</li>
+      <li><strong>Draw calls &amp; batching</strong> — material variants that break batching, instancing opportunities, SRP batcher compatibility.</li>
+      <li><strong>Shader cost</strong> — overdraw, full-screen effects, transparency stacking, expensive fragment work on mobile GPUs.</li>
+      <li><strong>CPU/GPU sync</strong> — readbacks, blocking calls, render-thread spikes, main-thread waits.</li>
+      <li><strong>Memory</strong> — texture sizes, mesh data, audio import settings, asset bundle layout.</li>
+    </ul>
+    <p>On Quest-class standalone hardware the frame budget is the design constraint, not a polish concern — performance work has to be integrated into the project from the start, otherwise you're rewriting at the end.</p>
+
+    <div class="case-tags">
+      <span class="tag">Profiling</span>
+      <span class="tag">Optimization</span>
+      <span class="tag">VR Performance</span>
+      <span class="tag">Unity</span>
+      <span class="tag">RenderDoc</span>
+    </div>
+  </div>
+  </div>
+</article>
+
+<!-- TOOLS & SYSTEMS -->
 <article class="case" id="tools">
   <div class="case-main">
   <div class="case-hero tools"></div>
   <div class="case-body">
     <div class="case-meta">
       <div><span class="k">Company</span><span class="v">Various</span></div>
-      <div><span class="k">Type</span><span class="v">Unity editor tools</span></div>
+      <div><span class="k">Type</span><span class="v">Tools &amp; runtime systems</span></div>
       <div><span class="k">Status</span><span class="v">Some open-source</span></div>
     </div>
-    <h2 class="case-name">Editor Tools</h2>
-    <p class="case-lede">A collection of Unity editor tools I've built over the years. Some live on GitHub.</p>
+    <h2 class="case-name">Tools &amp; Systems</h2>
+    <p class="case-lede">A collection of Unity tools and runtime systems I've built over the years — most of them solving problems that crop up at the intersection of VR performance and large BIM scenes. Some live on GitHub.</p>
 
     <h3 class="case-h3">Highlights</h3>
     <ul class="case-list">
+      <li><strong>Realtime occlusion culling</strong> — CPU-based, multi-threaded occlusion culling that runs every frame with no bake step. Massive draw-call drops on large or constantly-changing scenes that Unity's baked culling can't handle.</li>
+      <li><strong>Scene streaming</strong> — automatically splits massive BIM scenes into chunks and streams them in and out at runtime, so memory stays bounded. Makes real-scale building models loadable on standalone VR hardware.</li>
+      <li><strong>Sequential async light baker</strong> — bakes a queue of scenes one after another with live progress. Pick a 'develop' profile for fast iteration or 'release' for final quality, and the whole project re-bakes without having to reconfigure each scene by hand.</li>
       <li><strong>Area light placer</strong> — automates the tedious process of manually placing area lights in windows to fake ambient light coming in. <a href="https://github.com/DriesDeRidder/Unity-BakeryAreaLightTool" class="inline-link" target="_blank" rel="noopener">Open source</a>.</li>
-      <li><strong>BIM scaler &amp; combiner</strong> — automatically creates a scaled model of a BIM file and fits it into your desired bounds. You can combine meshes to improve draw calls, unify materials for performance and a consistent look, add a dissection shader with a cross-section slider, and apply a futuristic VFX-hologram effect using VFX Graph and graphics buffers.</li>
-      <li><strong>BIM metadata filter</strong> — lets you hide, highlight, and select objects within the editor based on the BIM metadata from your BIM software of choice.</li>
     </ul>
 
     <div class="case-tags">
       <span class="tag">Unity</span>
+      <span class="tag">Performance</span>
+      <span class="tag">Multithreading</span>
       <span class="tag">Shaders</span>
       <span class="tag">VFX Graph</span>
       <span class="tag">Editor Scripting</span>
@@ -251,6 +299,33 @@
     <a href="https://medium.com/@driesderidder" target="_blank" rel="noopener">Medium ↗</a>
   </div>
 </footer>
+
+<script>
+  document.querySelectorAll('[data-compare]').forEach(el => {
+    const overlay = el.querySelector('.compare-overlay');
+    const handle  = el.querySelector('.compare-handle');
+    const setSplit = (pct) => {
+      pct = Math.max(0, Math.min(100, pct));
+      overlay.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+      handle.style.left = pct + '%';
+    };
+    let dragging = false;
+    const move = (e) => {
+      if (!dragging) return;
+      const rect = el.getBoundingClientRect();
+      setSplit(((e.clientX - rect.left) / rect.width) * 100);
+    };
+    el.addEventListener('pointerdown', (e) => {
+      dragging = true;
+      el.setPointerCapture(e.pointerId);
+      move(e);
+    });
+    el.addEventListener('pointermove', move);
+    const stop = () => { dragging = false; };
+    el.addEventListener('pointerup', stop);
+    el.addEventListener('pointercancel', stop);
+  });
+</script>
 
 </body>
 </html>
