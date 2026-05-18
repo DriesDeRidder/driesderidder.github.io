@@ -37,7 +37,7 @@
 <section class="page-header">
   <a href="index.html" class="back-link">← Back to home</a>
   <h1 class="page-title">Selected <em>work</em></h1>
-  <p class="page-sub">A few projects from the last few years — an in-house framework that runs most of my studio's work, shipped VR games, a personal simulation, performance work that runs through all of it, and a handful of editor tools.</p>
+  <p class="page-sub">A few projects from the last few years — an in-house framework that runs most of my studio's work, shipped VR games, and the performance work and editor tools that run through all of it.</p>
 </section>
 
 <!-- TABLE OF CONTENTS -->
@@ -45,9 +45,8 @@
   <a href="#spectr">Spectr</a>
   <a href="#blackwood">Blackwood</a>
   <a href="#cargo">Cargo</a>
-  <a href="#scandinavian">Camping Sim</a>
-  <a href="#profiling">Profiling &amp; Optimization</a>
-  <a href="#tools">Tools &amp; Systems</a>
+  <a href="#performance">Performance, Tools &amp; Systems</a>
+  <a href="#side">On the side</a>
 </nav>
 
 <!-- SPECTR -->
@@ -65,10 +64,10 @@
     <p class="case-lede">What started as an architectural BIM viewer in VR has grown into the modular framework behind nearly everything VR Base ships — industrial simulations for major clients, in-house games, and the BIM collaboration tool that kicked the whole thing off.</p>
 
     <h3 class="case-h3">Where it started</h3>
-    <p>Spectr began as <strong>Spectr BIM</strong> — a way for architectural clients to upload their BIM models to our platform and step inside them in VR or through a web stream. The experience is multiplayer: you and your collaborators walk through the model together, change materials, switch between day and night lighting cycles, hide or highlight structural elements like walls and pipes, take measurements, and record sessions for later review.</p>
+    <p>Spectr began as <a href="https://spectrbim.com/" class="inline-link" target="_blank" rel="noopener"><strong>Spectr BIM</strong></a> — a way for architectural clients to upload their BIM models to our platform and step inside them in VR or through a web stream. The experience is multiplayer: you and your collaborators walk through the model together, change materials, switch between day and night lighting cycles, hide or highlight structural elements like walls and pipes, take measurements, and record sessions for later review.</p>
 
     <h3 class="case-h3">Where it is today</h3>
-    <p>That BIM-viewer core grew into something much broader. Today, Spectr is the framework behind a wide catalogue of work — industrial simulations and interactive collaboration tools for clients including Kellanova, Mars, DEME, Lantis, and SPIE. Every client project shares the same Spectr foundation but layers custom code on top, so we ship bespoke experiences without rebuilding the common systems each time. The same framework also powers in-house VR Base games like Temple of Puchino and Nautilus.</p>
+    <p>That BIM-viewer core grew into something much broader. Today, Spectr is the framework behind a wide catalogue of work — industrial simulations and interactive collaboration tools for clients including Kellanova, Mars, DEME, Lantis, and SPIE. Every client project shares the same Spectr foundation but layers custom code on top, so we ship bespoke experiences without rebuilding the common systems each time. The same framework also powers in-house VR Base games like <a href="https://vrbase.be/gamesmechelen/temple-of-puchino/" class="inline-link" target="_blank" rel="noopener">Temple of Puchino</a> and <a href="https://vrbase.be/gamesmechelen/nautilus/" class="inline-link" target="_blank" rel="noopener">Nautilus</a>.</p>
 
     <h3 class="case-h3">My contribution</h3>
     <p>In 2020 we laid the foundation for what Spectr is today. We started with a team of three and have continued developing it as the studio has grown past nine developers. I laid the groundwork for the modular architecture, implemented the multiplayer framework, built tools that automate repetitive setup, and helped design the feature-selection system that lets each project opt into exactly what it needs — locomotion, interaction, hardware integrations, BIM tooling — without dragging the rest along. That modularity is what makes the per-client custom-code approach viable at the scale we now run it.</p>
@@ -178,69 +177,40 @@
   </div>
 </article>
 
-<!-- CAMPING SIM -->
-<article class="case" id="scandinavian">
+<!-- PERFORMANCE, TOOLS & SYSTEMS -->
+<article class="case" id="performance">
   <div class="case-main">
-  <div class="case-hero camp"></div>
+  <div class="case-hero tools"></div>
   <div class="case-body">
     <div class="case-meta">
-      <div><span class="k">Company</span><span class="v">Personal</span></div>
-      <div><span class="k">Year</span><span class="v">2023 — present</span></div>
-      <div><span class="k">Role</span><span class="v">Solo developer</span></div>
-      <div><span class="k">Status</span><span class="v">In active development</span></div>
-    </div>
-    <h2 class="case-name">Scandinavian Camping Simulator</h2>
-    <p class="case-lede">A solo passion project. You're in charge of a Nordic campsite, and your job is to keep things running while everyone enjoys the outdoors.</p>
-
-    <h3 class="case-h3">The project</h3>
-    <p>You run a camping in the Nordics. That means providing accommodation, keeping the environment clean, organising activities, and — most of all — letting your guests enjoy nature. It started life as a caravanning simulator, born from the <a href="https://medium.com/@driesderidder/coding-a-simple-car-trailer-in-c-and-unity-349444f2d76e" class="inline-link" target="_blank" rel="noopener">blog post I wrote about trailer physics</a>, and gradually grew into the game it is today.</p>
-
-    <h3 class="case-h3">My contribution</h3>
-    <p>Solo project — design, code, art direction, the lot. Built in Unity using a procedural approach for terrain and a hand-built simulation loop for the camping management side. Still in active development.</p>
-
-    <div class="case-tags">
-      <span class="tag">Solo Dev</span>
-      <span class="tag">Simulation</span>
-      <span class="tag">Unity</span>
-      <span class="tag">C#</span>
-      <span class="tag">Design</span>
-    </div>
-  </div>
-  </div>
-  <div class="case-gallery">
-    <figure><img src="images/camping-1.jpg" alt="Scandinavian Camping Simulator screenshot 1" loading="lazy" onerror="this.style.display='none'"></figure>
-    <figure><img src="images/camping-2.jpg" alt="Scandinavian Camping Simulator screenshot 2" loading="lazy" onerror="this.style.display='none'"></figure>
-    <figure><img src="images/camping-3.jpg" alt="Scandinavian Camping Simulator screenshot 3" loading="lazy" onerror="this.style.display='none'"></figure>
-  </div>
-</article>
-
-<!-- PROFILING & OPTIMIZATION -->
-<article class="case" id="profiling">
-  <div class="case-main">
-  <div class="case-hero profiling">
-    <div class="case-hero-placeholder">[ Profiling &amp; Optimization ]</div>
-  </div>
-  <div class="case-body">
-    <div class="case-meta">
-      <div><span class="k">Discipline</span><span class="v">Performance</span></div>
+      <div><span class="k">Discipline</span><span class="v">Performance &amp; Engineering</span></div>
       <div><span class="k">Platform</span><span class="v">VR / Unity</span></div>
       <div><span class="k">Applies to</span><span class="v">All my projects</span></div>
     </div>
-    <h2 class="case-name">Profiling &amp; Optimization</h2>
-    <p class="case-lede">VR forgives nothing — a missed frame is a noticeable hitch. Years of shipping to standalone headsets has made performance work part of how I write code, not a phase tacked onto the end.</p>
+    <h2 class="case-name">Performance, Tools &amp; Systems</h2>
+    <p class="case-lede">VR forgives nothing — a missed frame is a noticeable hitch. Years of shipping PC VR titles have made performance work part of how I write code, not a phase tacked onto the end. Most of the editor tools and runtime systems I've built grew directly out of that constraint.</p>
 
     <h3 class="case-h3">How I approach performance</h3>
-    <p>Performance work is measurement first. I lean on the Unity Profiler and Memory Profiler for CPU and GC, the Frame Debugger and RenderDoc for GPU and draw calls, and platform-specific tooling like OVR Metrics or Snapdragon Profiler when targeting standalone headsets. The goal is to know where time is actually going before I change anything — guessing burns days.</p>
+    <p>Performance work is measurement first. I lean on the Unity Profiler and Memory Profiler for CPU and GC, and the Frame Debugger and RenderDoc for GPU and draw calls. The goal is to know where time is actually going before I change anything — guessing burns days.</p>
 
     <h3 class="case-h3">What I look for</h3>
     <ul class="case-list">
       <li><strong>GC pressure</strong> — boxing, allocations in update loops, LINQ on hot paths, string concatenation in logs that ship.</li>
       <li><strong>Draw calls &amp; batching</strong> — material variants that break batching, instancing opportunities, SRP batcher compatibility.</li>
-      <li><strong>Shader cost</strong> — overdraw, full-screen effects, transparency stacking, expensive fragment work on mobile GPUs.</li>
+      <li><strong>Shader cost</strong> — overdraw, full-screen effects, transparency stacking, expensive fragment work that doesn't survive stereo rendering at 90+ Hz.</li>
       <li><strong>CPU/GPU sync</strong> — readbacks, blocking calls, render-thread spikes, main-thread waits.</li>
       <li><strong>Memory</strong> — texture sizes, mesh data, audio import settings, asset bundle layout.</li>
     </ul>
-    <p>On Quest-class standalone hardware the frame budget is the design constraint, not a polish concern — performance work has to be integrated into the project from the start, otherwise you're rewriting at the end.</p>
+    <p>In PC VR the frame budget is still the design constraint, not a polish concern — rendering each frame twice at 90+ Hz with low latency is unforgiving, and performance work has to be integrated into the project from the start, otherwise you're rewriting at the end.</p>
+
+    <h3 class="case-h3">Tools &amp; systems I've built</h3>
+    <p>When the same performance problem shows up across projects, I write a tool for it. A few highlights — most of them sit at the intersection of VR performance and large BIM scenes, and some live on GitHub:</p>
+    <ul class="case-list">
+      <li><strong>Realtime occlusion culling</strong> — CPU-based, multi-threaded occlusion culling that runs every frame with no bake step. Massive draw-call drops on large or constantly-changing scenes that Unity's baked culling can't handle.</li>
+      <li><strong>Scene streaming</strong> — automatically splits massive BIM scenes into chunks and streams them in and out at runtime, so memory stays bounded. Makes real-scale building models loadable in VR without blowing the budget.</li>
+      <li><strong>Sequential async light baker</strong> — bakes a queue of scenes one after another with live progress. Pick a 'develop' profile for fast iteration or 'release' for final quality, and the whole project re-bakes without having to reconfigure each scene by hand.</li>
+      <li><strong>Area light placer</strong> — automates the tedious process of manually placing area lights in windows to fake ambient light coming in. <a href="https://github.com/DriesDeRidder/Unity-BakeryAreaLightTool" class="inline-link" target="_blank" rel="noopener">Open source</a>.</li>
+    </ul>
 
     <div class="case-tags">
       <span class="tag">Profiling</span>
@@ -248,38 +218,8 @@
       <span class="tag">VR Performance</span>
       <span class="tag">Unity</span>
       <span class="tag">RenderDoc</span>
-    </div>
-  </div>
-  </div>
-</article>
-
-<!-- TOOLS & SYSTEMS -->
-<article class="case" id="tools">
-  <div class="case-main">
-  <div class="case-hero tools"></div>
-  <div class="case-body">
-    <div class="case-meta">
-      <div><span class="k">Company</span><span class="v">Various</span></div>
-      <div><span class="k">Type</span><span class="v">Tools &amp; runtime systems</span></div>
-      <div><span class="k">Status</span><span class="v">Some open-source</span></div>
-    </div>
-    <h2 class="case-name">Tools &amp; Systems</h2>
-    <p class="case-lede">A collection of Unity tools and runtime systems I've built over the years — most of them solving problems that crop up at the intersection of VR performance and large BIM scenes. Some live on GitHub.</p>
-
-    <h3 class="case-h3">Highlights</h3>
-    <ul class="case-list">
-      <li><strong>Realtime occlusion culling</strong> — CPU-based, multi-threaded occlusion culling that runs every frame with no bake step. Massive draw-call drops on large or constantly-changing scenes that Unity's baked culling can't handle.</li>
-      <li><strong>Scene streaming</strong> — automatically splits massive BIM scenes into chunks and streams them in and out at runtime, so memory stays bounded. Makes real-scale building models loadable on standalone VR hardware.</li>
-      <li><strong>Sequential async light baker</strong> — bakes a queue of scenes one after another with live progress. Pick a 'develop' profile for fast iteration or 'release' for final quality, and the whole project re-bakes without having to reconfigure each scene by hand.</li>
-      <li><strong>Area light placer</strong> — automates the tedious process of manually placing area lights in windows to fake ambient light coming in. <a href="https://github.com/DriesDeRidder/Unity-BakeryAreaLightTool" class="inline-link" target="_blank" rel="noopener">Open source</a>.</li>
-    </ul>
-
-    <div class="case-tags">
-      <span class="tag">Unity</span>
-      <span class="tag">Performance</span>
       <span class="tag">Multithreading</span>
       <span class="tag">Shaders</span>
-      <span class="tag">VFX Graph</span>
       <span class="tag">Editor Scripting</span>
       <span class="tag">Open Source</span>
     </div>
@@ -291,6 +231,101 @@
     <figure><img src="images/tools-3.jpg" alt="Editor tool screenshot 3" loading="lazy" onerror="this.style.display='none'"></figure>
   </div>
 </article>
+
+<!-- ON THE SIDE -->
+<section class="section side-section" id="side">
+  <div class="side-header">
+    <h2 class="section-title">On the <em>side</em></h2>
+    <p class="page-sub">A few things I've built outside the studio — some finished, some shelved, some still kicking around. They show up here because they shaped how I work, even when they didn't ship.</p>
+  </div>
+
+  <div class="projects-grid">
+    <div class="project featured">
+      <div class="project-img thewall"></div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span>Side gig</span>
+          <span>Tools / Unity</span>
+        </div>
+        <h3 class="project-name">The Wall — Map Editor</h3>
+        <p class="project-desc">I built the in-game map editor for The Wall, an indie game with a dedicated community following. The game was eventually shelved by its creator, but the editor work was a deep dive into content pipelines and tools UX — and the community still keeps it alive.</p>
+        <div class="project-tags">
+          <span class="tag">Tools</span>
+          <span class="tag">Unity</span>
+          <span class="tag">C#</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-img camping"></div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span>Personal</span>
+          <span>Unity</span>
+        </div>
+        <h3 class="project-name">Scandinavian Camping Simulator</h3>
+        <p class="project-desc">Solo Unity project: you run a Nordic campsite — accommodation, activities, nature. Started as a caravan-physics prototype and grew into a small management sim. No longer in development.</p>
+        <div class="project-tags">
+          <span class="tag">Solo Dev</span>
+          <span class="tag">Sim</span>
+          <span class="tag">Unity</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-img meditation"></div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span>Personal</span>
+          <span>VR / Unity</span>
+        </div>
+        <h3 class="project-name">VR Guided Meditation</h3>
+        <p class="project-desc">A short VR experience built around guided meditation — a calming environment paired with audio cues, exploring how immersion changes the feel of a mindfulness session.</p>
+        <div class="project-tags">
+          <span class="tag">VR</span>
+          <span class="tag">Unity</span>
+          <span class="tag">Audio</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-img clockapp"></div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span>Personal</span>
+          <span>Android</span>
+        </div>
+        <h3 class="project-name">Clock Reading App</h3>
+        <p class="project-desc">A small Android app that helps children learn to read an analog clock. An excuse to design clear UI for early learners and ship something on a platform I don't usually work in.</p>
+        <div class="project-tags">
+          <span class="tag">Android</span>
+          <span class="tag">Mobile UI</span>
+          <span class="tag">Education</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-img unrealenv"></div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span>Personal</span>
+          <span>Unreal</span>
+        </div>
+        <h3 class="project-name">Unreal Environment Studies</h3>
+        <p class="project-desc">Hobby scenes in Unreal — natural landscapes and interior spaces I built to play with lighting, materials, and composition outside of the Unity work I do day-to-day.</p>
+        <div class="project-tags">
+          <span class="tag">Unreal</span>
+          <span class="tag">Lighting</span>
+          <span class="tag">Environment Art</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- CONTACT CTA -->
 <section class="contact" id="contact">

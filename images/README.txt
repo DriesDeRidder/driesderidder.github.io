@@ -5,7 +5,6 @@ Suggested filenames (referenced by the site):
 - blackwood.jpg      — project hero
 - spectr.jpg
 - cargo.jpg
-- scandinavian.jpg
 - tools.jpg
 
 Recommended size: 1600px wide for project shots, JPEG at quality 85.
