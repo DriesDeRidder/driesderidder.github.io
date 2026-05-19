@@ -193,16 +193,6 @@
     <h3 class="case-h3">How I approach performance</h3>
     <p>Performance work is measurement first. I lean on the Unity Profiler and Memory Profiler for CPU and GC, and the Frame Debugger and RenderDoc for GPU and draw calls. The goal is to know where time is actually going before I change anything — guessing burns days.</p>
 
-    <h3 class="case-h3">What I look for</h3>
-    <ul class="case-list">
-      <li><strong>GC pressure</strong> — boxing, allocations in update loops, LINQ on hot paths, string concatenation in logs that ship.</li>
-      <li><strong>Draw calls &amp; batching</strong> — material variants that break batching, instancing opportunities, SRP batcher compatibility.</li>
-      <li><strong>Shader cost</strong> — overdraw, full-screen effects, transparency stacking, expensive fragment work that doesn't survive stereo rendering at 90+ Hz.</li>
-      <li><strong>CPU/GPU sync</strong> — readbacks, blocking calls, render-thread spikes, main-thread waits.</li>
-      <li><strong>Memory</strong> — texture sizes, mesh data, audio import settings, asset bundle layout.</li>
-    </ul>
-    <p>In PC VR the frame budget is still the design constraint, not a polish concern — rendering each frame twice at 90+ Hz with low latency is unforgiving, and performance work has to be integrated into the project from the start, otherwise you're rewriting at the end.</p>
-
     <h3 class="case-h3">Tools &amp; systems I've built</h3>
     <p>When the same performance problem shows up across projects, I write a tool for it. A few highlights — most of them sit at the intersection of VR performance and large BIM scenes, and some live on GitHub:</p>
     <ul class="case-list">
@@ -224,11 +214,6 @@
       <span class="tag">Open Source</span>
     </div>
   </div>
-  </div>
-  <div class="case-gallery">
-    <figure><img src="images/tools-1.jpg" alt="Editor tool screenshot 1" loading="lazy" onerror="this.style.display='none'"></figure>
-    <figure><img src="images/tools-2.jpg" alt="Editor tool screenshot 2" loading="lazy" onerror="this.style.display='none'"></figure>
-    <figure><img src="images/tools-3.jpg" alt="Editor tool screenshot 3" loading="lazy" onerror="this.style.display='none'"></figure>
   </div>
 </article>
 
